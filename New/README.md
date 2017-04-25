@@ -12,7 +12,8 @@ $ sails l
 ```
 
 After that, go to: [http://localhost:1337](http://localhost:1337)
-![GitHub image]('https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png' "Imagen")
+
+![GitHub image](https://pbs.twimg.com/profile_images/616309728688238592/pBeeJQDQ.png "GitHub")
 
 ## Tools
 
