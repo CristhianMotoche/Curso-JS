@@ -1,3 +1,6 @@
-# New
+# JS application
 
-a [Sails](http://sailsjs.org) application
+## Start up
+```
+$ sails l
+```
