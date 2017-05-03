@@ -7,6 +7,8 @@
 
 module.exports = {
 
+  connection: 'mongodb',
+
   attributes: {
 
     nombre: {

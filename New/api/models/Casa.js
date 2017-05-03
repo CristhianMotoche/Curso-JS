@@ -7,6 +7,8 @@
 
 module.exports = {
 
+  connection: 'mysqlDocker',
+
   attributes: {
     nombre: {
       type: 'string'
