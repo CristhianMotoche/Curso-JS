@@ -9,3 +9,12 @@ A JavaScript function is a block of code designed to perform a particular task:
 A JavaScript function is executed when "something" invokes it (calls it).
 
 When JavaScript reaches a `return` statement, the function will stop executing.
+
+```javascript
+function toCelsius(fahrenheit) {
+    return (5/9) * (fahrenheit-32);
+}
+```
+
+- toCelsius(3) <- Function execution
+- toCelsius <- Function definition
