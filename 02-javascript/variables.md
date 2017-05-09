@@ -24,6 +24,8 @@ There are some data types in JS:
 - undefined
 - null
 
+There values can be interpreted as `false`.
+
 ## Difference between Undefined and Null
 
 ```javascript
