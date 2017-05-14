@@ -16,5 +16,53 @@ function toCelsius(fahrenheit) {
 }
 ```
 
-- toCelsius(3) <- Function execution
 - toCelsius <- Function definition
+- toCelsius(3) <- Function execution
+
+## Function declaration
+```javascript
+function add(param1, param2) {
+    return param1 + param2;
+}
+```
+
+## Function expresion
+```javascript
+var add = function (param1, param2) {
+    return param1 + param2;
+};
+```
+
+## Functions are hoisted
+It means that they are entirety moved to the beginning of the current scope.
+So functions can be called in everywhere inside the scope.
+
+```javascript
+function f(){
+  g();
+  function g(){}
+}
+```
+
+## Arguments
+The number of arguments in JS is arbitrary. All the arguments can be accesed
+by the variable `arguments`. Looks like an array, but it is not.
+
+```javascript
+function zeroArgs(){
+  console.log(arguments);
+}
+
+zeroArgs(1,2,3,4);
+```
+
+## Default parameters
+Common pattern to define default parameters:
+
+```javascript
+function fun(y){
+	y = y || 0;
+}
+```
+
+If `y` is truthy then `y` keeps its value.
