@@ -11,19 +11,23 @@ var myfunction = function(argument) {
 var undefinedvalue;
 var nullvalue = null;
 
-console.log(number);
-console.log(string);
-console.log(bool);
-console.log(date);
-console.log(array);
-console.log(object);
-console.log(object.field1);
-console.log(object.fieldi.fieldi1);
-console.log(myfunction);
-console.log(undefinedvalue);
-console.log(nullvalue);
+console.log("Number:", number);
+console.log("String:", string);
+console.log("Boolean:", bool);
+console.log("Date:", date);
+console.log("Literal array", array);
+console.log("Object:", object);
+console.log("Access to object.field1:", object.field1);
+console.log("Access to object.notdefined:", object.notdefined);
+console.log("Access to object.fieldi.fieldi1:", object.fieldi.fieldi1);
+console.log("Function:", myfunction);
+console.log("Undefined:", undefinedvalue);
+console.log("Null:", nullvalue);
 
-console.log(typeof undefined);           // undefined
-console.log(typeof null);                // object
-console.log(null === undefined);         // false
-console.log(null == undefined);        // true
+console.log("Typeof undefined:", typeof undefined);           // undefined
+console.log("Typeof null (remember the bug :P):", typeof null);                // object
+console.log("Compare null with undefined by content and type:", null === undefined);         // false
+console.log("Compare null with undefined by content:", null == undefined);        // true
+
+var myDate = new Date();
+console.log("myDate instanceof Date:", myDate instanceof Date);

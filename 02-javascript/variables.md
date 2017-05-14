@@ -1,5 +1,88 @@
 # Variables
-## Data types in JavaScript
+## Assignment
+Variables in JS are declared before they are used.
+
+## Values
+All values (boolean, numbers, strings, objects, and so on) have properties. For
+instance:
+```javascript
+var string = "hello";
+string.toUpperCase(); // Will produce: HELLO
+```
+
+## Primitive Values Versus Objects
+*Primitive values*:
+- booleans, numbers, strings, null and undefined.
+
+All values with the same "content" are the same:
+
+```javascript
+> var prim1 = 123;
+> var prim2 = 123;
+> prim1 === prim2
+true
+```
+
+The properties of primitive values cannot be changed.
+
+```javascript
+> var string = "hello";
+> string.length = 1; // Will not affect the property
+> string.length
+4
+```
+
+*Object values*:
+- all other values.
+
+Each object is unique, so comparing two different object (even with the same
+properties) will be `false`.
+
+```javascript
+> var obj1 = {};  // an empty object
+> var obj2 = {};  // another empty object
+> obj1 === obj2
+false
+> obj1 === obj1
+true
+```
+
+There are literal for:
+- Objects
+```javascript
+{ foo: "bar",
+  baz: "tar"
+}
+```
+- Arrays
+```javascript
+[1,2,3,4]
+```
+- Regular Expressions
+```javascript
+/^a+b+$/
+```
+
+## Categorizing Values
+- *typeof*
+Used for primitives.
+
+NOTE: *null* is not an objet, althought `typeof null` will return `object`
+because of a bug that cannot be solved.
+
+- *instanceof*
+Used to compare if an object is an instance of some Constructor.
+
+## Boolean
+- *Falsy* - The following values are considered `false`:
+  * undefined
+  * null
+  * 0, NaN
+  * ''
+
+- *Truthy* - All other values (primitives and objects) are considered `true`
+
+## Numbers
 There are some data types in JS:
 - Numbers
   - JavaScript Numbers are Always 64-bit Floating Point
@@ -10,19 +93,19 @@ There are some data types in JS:
 ----
 |52 bits(0-51)|11 bits (52-62)|1 bit (63)|
 
-  - Precision
-    - Integers (numbers without a period or exponent notation) are considered accurate up to 15 digits.
-    - The maximum number of decimals is 17, but floating point arithmetic is not always 100% accurate:
-- String
-- Bool
-- Array
-- Object
-- Date
-- Function
+- Precision
+  - Integers (numbers without a period or exponent notation) are considered accurate up to **15 digits**.
+  - The maximum number of **decimals is 17**, but floating point arithmetic is not always 100% accurate:
+
+## String
+Remember that strings are primitive values, that means that they are **inmutable**.
 
 ## Bottom types
-- undefined
-- null
+- *undefined*
+It means "no value"
+
+- *null*
+It means "no object"
 
 There values can be interpreted as `false`.
 
