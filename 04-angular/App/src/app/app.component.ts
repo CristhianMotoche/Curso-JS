@@ -10,6 +10,8 @@ export class AppComponent {
   title = 'Hello world!';
   name = 'Cristhian';
   lastname = 'Motoche';
+  url:string = 'https://angular.io';
+  url_image:string = 'https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg';
 
   constructor(){
     console.log("Hello!");
