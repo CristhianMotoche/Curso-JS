@@ -4,7 +4,25 @@
 
 <h1>{{ title }} {{ name }}</h1>
 
+<h2>Property binding</h2>
+<h3>1. With curly brackets</h3>
+<p>{{ parrafo }}/p>
 
+<h3>2. With brackets</h3>
 <a [href]="url">
-  <img [src]="url_image" alt="Image">
+  <img [src]="url_image" width="100px" alt="Image">
 </a>
+
+<p [innerText]="parrafo" [style.color]="color"></p>
+
+<app-stylo></app-stylo>
+
+<style>
+p {
+  border: 10px;
+  border-style: solid;
+  boder-color: #125678;
+}
+</style>
+
+<p>This is war!!!</p>
