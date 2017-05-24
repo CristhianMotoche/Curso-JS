@@ -6,7 +6,7 @@
 
 <h2>Property binding</h2>
 <h3>1. With curly brackets</h3>
-<p>{{ parrafo }}/p>
+<p>{{ parrafo }}</p>
 
 <h3>2. With brackets</h3>
 <a [href]="url">
@@ -21,8 +21,28 @@
 p {
   border: 10px;
   border-style: solid;
-  boder-color: #125678;
+  border-color: #125678;
+}
+p:hover {
+  border-color: white;
 }
 </style>
 
-<p>This is war!!!</p>
+<button class="btn btn-secondary">asdf</button>
+<div class="col-12">
+  <div class="col-4">
+    <p>This is war!!!</p>
+  </div>
+  <div class="col-4">
+    <p>This is war!!!</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="">
+    <p>This is war!!!</p>
+  </div>
+  <div class="">
+    <p>This is war!!!</p>
+  </div>
+</div>

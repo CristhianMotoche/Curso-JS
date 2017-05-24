@@ -5,11 +5,13 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { StyloComponent } from './stylo/stylo.component';
+import { InitComponent } from './init/init.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    StyloComponent
+    StyloComponent,
+    InitComponent
   ],
   imports: [
     BrowserModule,
@@ -17,6 +19,6 @@ import { StyloComponent } from './stylo/stylo.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [InitComponent]
 })
 export class AppModule { }
