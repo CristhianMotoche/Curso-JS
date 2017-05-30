@@ -1,3 +1,26 @@
-<p>
-  stylo works!
-</p>
+<!--<input type="text" [value]="value" #labelName placeholder="Insert text">-->
+
+<!--Banana box model [()]-->
+<!--<input type="text" [value]="value" #labelName2 placeholder="Insert text" [(ngModel)]="value">-->
+
+<!--From component to view-->
+<!--<img [src]="value" alt="">-->
+
+<!--Events from view to component-->
+<!--<button (click)="changeInput()">Click here!</button>-->
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4" *ngFor="let user of userArray">
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top img-responsive" [src]="user.image" alt="Card image cap">
+        <div class="card-block">
+          <h4 class="card-title">{{ user.nombre }}</h4>
+          <p class="card-text">{{ user.apellido }}</p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

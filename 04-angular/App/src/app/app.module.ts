@@ -19,6 +19,6 @@ import { InitComponent } from './init/init.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [InitComponent]
+  bootstrap: [StyloComponent]
 })
 export class AppModule { }
