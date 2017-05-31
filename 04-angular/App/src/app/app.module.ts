@@ -22,7 +22,7 @@ import { GithubComponent } from './github/github.component';
   ],
   providers: [],
 //  bootstrap: [InitComponent]
-  bootstrap: [GithubComponent]
-//  bootstrap: [StyloComponent]
+//  bootstrap: [GithubComponent]
+  bootstrap: [StyloComponent]
 })
 export class AppModule { }
