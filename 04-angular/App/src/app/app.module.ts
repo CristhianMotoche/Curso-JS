@@ -6,12 +6,14 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { StyloComponent } from './stylo/stylo.component';
 import { InitComponent } from './init/init.component';
+import { GithubComponent } from './github/github.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StyloComponent,
-    InitComponent
+    InitComponent,
+    GithubComponent
   ],
   imports: [
     BrowserModule,
@@ -19,8 +21,8 @@ import { InitComponent } from './init/init.component';
     HttpModule
   ],
   providers: [],
-  bootstrap: [InitComponent]
-//  bootstrap: [StyloComponent]
+//  bootstrap: [InitComponent]
+  bootstrap: [GithubComponent]
 //  bootstrap: [StyloComponent]
 })
 export class AppModule { }
