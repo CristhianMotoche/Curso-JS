@@ -45,6 +45,9 @@
 }
 
 .bs-docs-booticon {
+  margin: 0 auto;
+  margin-top: 20px;
+  float:none;
 	display: block;
 	font-weight: 500;
 	color: #fff;
@@ -85,4 +88,27 @@ a {
 
 .bs-docs-footer-links li {
 	display: inline-block;
+}
+
+.box {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+	border: 1px solid #cdbfe3;
+	background-color: transparent;
+	border: 1px solid #cdbfe3;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: rgb(205, 191, 227);
+	border-right-color: rgb(205, 191, 227);
+	border-bottom-color: rgb(205, 191, 227);
+	border-left-color: rgb(205, 191, 227);
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
