@@ -1,0 +1,4 @@
+body {
+  background-image: url("../assets/stars.png");
+  background-repeat: repeat-y repeat-x;
+}

@@ -17,7 +17,10 @@ export class AppComponent {
       .get("http://swapi.co/api/planets")
       .subscribe(
         (planets) => {
-          this.planets = planets.json().results;
+          let results = planets.json().results;
+          results.map((planet) => planet.src = `assets/img/${ planet.name }.png`)
+          results.map((planet) => planet.terrain = planet.terrain.split(','))
+          this.planets = results
         },
         (res) => { alert(res) },
         () => {}
@@ -32,7 +35,8 @@ interface Planet {
     diameter: number,
     climate: string,
     gravity: string,
-    terrain: string,
+    terrain: string[],
     surface_water: number,
-    population: number
+    population: number,
+    src: string
 }

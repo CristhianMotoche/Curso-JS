@@ -1,19 +1,29 @@
 <div class="container">
   <div class="row" >
     <div *ngFor="let planet of planets">
-      <div class="col-sm-4">
-        <div class="card" style="width: 20rem;">
+      <div class="col-xs-6">
+        <div class="card">
           <div class="card-block">
+            <img [src]="planet.src" width="100%" [alt]="planet.name">
             <h4 class="card-title">{{ planet.name }}</h4>
+            <h5 class="card-subtitle"><strong>Rotation Period</strong></h5>
             <p class="card-text">{{ planet.rotation_period }}</p>
+            <h5 class="card-subtitle"><strong>Orbial Period</strong></h5>
             <p class="card-text">{{ planet.orbital_period }}</p>
+            <h5 class="card-subtitle"><strong>Diameter</strong></h5>
             <p class="card-text">{{ planet.diameter }}</p>
+            <h5 class="card-subtitle"><strong>Climate</strong></h5>
             <p class="card-text">{{ planet.climate }}</p>
-<!--            <p class="card-text">{{ planet.gravity }}</p>-->
-            <p class="card-text">{{ planet.terrain }}</p>
-<!--            <p class="card-text">{{ planet.surface_water }}</p>-->
+            <h5 class="card-subtitle"><strong>Gravity</strong></h5>
+            <p class="card-text">{{ planet.gravity }}</p>
+            <h5 class="card-subtitle"><strong>Terrain</strong></h5>
+            <ul>
+              <li *ngFor="let tr of planet.terrain">{{ tr }}</li>
+            </ul>
+            <h5 class="card-subtitle"><strong>Surface Water</strong></h5>
+            <p class="card-text">{{ planet.surface_water }}</p>
+            <h5 class="card-subtitle"><strong>Population</strong></h5>
             <p class="card-text">{{ planet.population }}</p>
-            <a href="#" class="btn btn-primary">Hello!</a>
           </div>
         </div>
       </div>
