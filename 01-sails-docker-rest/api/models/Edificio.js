@@ -7,7 +7,7 @@
 
 module.exports = {
 
-  connection: 'postgresqlDocker',
+//  connection: 'postgresqlDocker',
 
   attributes: {
 
