@@ -5,11 +5,19 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { SwPlanetComponent } from './sw-planet/sw-planet.component';
+import { SwPopulationComponent } from './sw-population/sw-population.component';
+import { SwFilmsComponent } from './sw-films/sw-films.component';
+import { SwClimateComponent } from './sw-climate/sw-climate.component';
+import { SwTerrainComponent } from './sw-terrain/sw-terrain.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SwPlanetComponent
+    SwPlanetComponent,
+    SwPopulationComponent,
+    SwFilmsComponent,
+    SwClimateComponent,
+    SwTerrainComponent
   ],
   imports: [
     BrowserModule,

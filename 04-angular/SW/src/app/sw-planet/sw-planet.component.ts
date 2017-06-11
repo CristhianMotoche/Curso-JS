@@ -1,7 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Http } from '@angular/http';
 
-import { User } from "app/Classes/User";
+import { Planet } from "app/interfaces/Planet";
 
 @Component({
   selector: 'app-sw-planet',
@@ -9,25 +8,9 @@ import { User } from "app/Classes/User";
   styleUrls: ['./sw-planet.component.css']
 })
 export class SwPlanetComponent implements OnInit {
-  @Input() user:User
+  @Input() planet:Planet
 
-  constructor(private _http: Http) { }
-
-  newUser:User = new User();
-
-  createUser(){
-    console.log(this.newUser);
-
-    this._http
-      .post("http://localhost:8000/usuario", this.newUser)
-      .subscribe(
-        (response) => {
-          console.log(response);
-        },
-        (error) => { console.log(error); },
-        () => {}
-      )
-  }
+  constructor() { }
 
   ngOnInit() {
   }

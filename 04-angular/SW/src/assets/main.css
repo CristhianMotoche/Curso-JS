@@ -4,7 +4,7 @@
 }
 
 body {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-family: swfont;
   background-image: url("stars.png");
   background-repeat: repeat-y repeat-x;

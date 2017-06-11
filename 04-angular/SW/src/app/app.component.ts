@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Http } from '@angular/http';
 
-import { User } from "app/Classes/User";
+import { Planet } from "app/interfaces/Planet";
 
 @Component({
   selector: 'app-root',
@@ -9,7 +9,7 @@ import { User } from "app/Classes/User";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  users:User[] = []
+  planets:Planet[] = []
 
   constructor(private _http: Http) {
   }
@@ -20,12 +20,16 @@ export class AppComponent {
 
   loadPlanets() {
     this._http
-      .get("http://localhost:8000/usuario")
+      .get("http://swapi.co/api/planets/")
       .subscribe(
-        (users) => {
-          this.users = users.json();
+        (planets) => {
+          let results = planets.json().results;
+          results.map((planet) => planet.src = `assets/img/${ planet.name }.png`)
+          results.map((planet) => planet.terrain = planet.terrain.split(','))
+          results.map((planet) => planet.climate = planet.climate.split(','))
+          this.planets = results
         },
-        (res) => { alert(res) },
+        (error) => { alert(error) },
         () => {}
       )
   }
